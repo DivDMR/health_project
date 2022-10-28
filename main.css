@@ -39,6 +39,7 @@ a{
 }
 .header .nav_logo{
     margin: 0 2rem;
+    font-weight: bold;
 }
 .header .nav_list{
     list-style: none;
@@ -48,4 +49,8 @@ a{
 }
 .header .nav_link{
     color: grey;
+    transition: 0.3s;
+}
+.header .nav_link:hover{
+    color: black;
 }
