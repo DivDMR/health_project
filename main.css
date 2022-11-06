@@ -35,7 +35,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    margin-top: 1rem;
+    padding: 1rem 0;
 }
 .header .nav{
     height: 3rem;
@@ -106,12 +106,31 @@ a{
 .patient{
     background-color: var(--main-color);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 .patient_section-title{
     color: white;
-    margin-top: 3rem;
+    margin: 3rem 0;
     font-size: 3.5rem;
+}
+
+.patient_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 5rem;
+}
+
+.patient_card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex: 1;
+}
+.patient_card-title{
+    text-align: center;
 }
