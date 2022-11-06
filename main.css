@@ -102,3 +102,16 @@ a{
 .home_section-button:hover{
     background-color: #ff6456;
 }
+
+.patient{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.patient_section-title{
+    color: white;
+    margin-top: 3rem;
+    font-size: 3.5rem;
+}
