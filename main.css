@@ -108,7 +108,7 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    padding-bottom: 4rem;
 }
 .patient_section-title{
     color: white;
@@ -120,17 +120,69 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0 5rem;
 }
 
 .patient_card{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     flex: 1;
+    height: 500px;
 }
 .patient_card-title{
     text-align: center;
+}
+.patient_card-text{
+    padding: 1rem;
+}
+
+.family{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.family_container{
+    width: 70%;
+}
+
+.family_section-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.family_section-text{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ol li{
+    list-style-type: none;
+    counter-increment: item;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+ol li::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(item);
+    background-color: var(--secondary-color);
+    color: white;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 20px;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
 }
