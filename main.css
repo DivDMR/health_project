@@ -130,7 +130,7 @@ a{
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     flex: 1;
-    height: 550px;
+    height: 580px;
 }
 .patient_card-title{
     text-align: center;
@@ -141,7 +141,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .family{
