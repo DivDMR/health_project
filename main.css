@@ -224,6 +224,7 @@ ol li:nth-child(3)::before{
 
 .accordion {
     background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--secondary-color) !important;
     color: rgb(100, 100, 100);
     cursor: pointer;
     padding: 1.2rem 0;
@@ -235,6 +236,9 @@ ol li:nth-child(3)::before{
     font-family: "Poppins";
     font-size: 1.4rem;
 }
+.accordion:hover{
+    color: var(--secondary-color-light);
+}
 
 .accordion:after {
     content: '\002B';
@@ -243,6 +247,9 @@ ol li:nth-child(3)::before{
     float: right;
     margin-left: 5px;
 }
+.active{
+    color: var(--secondary-color-light);
+}
 .active:after {
     content: "\2212";
 }
@@ -250,6 +257,7 @@ ol li:nth-child(3)::before{
 .panel{
     background-color: white;
     max-height: 0;
+    margin-top: 1rem;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     font-size: 1.4rem;
