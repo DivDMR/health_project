@@ -120,7 +120,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     margin: 0 5rem;
 }
 
@@ -130,13 +130,18 @@ a{
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     flex: 1;
-    height: 500px;
+    height: 550px;
 }
 .patient_card-title{
     text-align: center;
+    font-size: 1.4rem;
 }
 .patient_card-text{
-    padding: 1rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 1.1rem;
 }
 
 .family{
@@ -191,4 +196,62 @@ ol li:nth-child(2)::before{
 }
 ol li:nth-child(3)::before{
     background-color: var(--secondary-color-light);
+}
+
+.professional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.professional h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+.professional p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.professional_container{
+    width: 60%;
+}
+.faq_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accordion {
+    background-color: rgb(255, 255, 255);
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+    padding: 1.2rem 0;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: "Poppins";
+    font-size: 1.4rem;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: var(--secondary-color);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+
+.panel{
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.4rem;
+    color: rgb(100, 100, 100);
 }
